@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+	<meta charset="utf-8">
+	<title>Navne generator</title>
+	<!--ens stylesheet skal loades før ens body, ellers får man problemer med sit udseende -->
+	<link rel="stylesheet" type="text/css" href="css/mystyles.css">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<h1>Her er dit nye navn</h1>
+		
+		<p>Har du brug for et nyt navn?</p>
+		<p>Er dit gamle navn blevet for kedeligt og for hverdagsagtigt?</p>
+		
+		</div>
+			<!--Det nye navn kommer til at stå her -->
+			<div class="textbox">
+				<strong id="resultat"></strong>
+			</div>
+		
+		
+		<div class="brugerinter">
+			<!--knap til at vælge et drengenavn, reference til JS og CSS -->
+			<label>Dreng</label>
+				<input type="radio" name="Dreng-Pige" id="dreng">
+
+			<!--knap til at vælge et pigenavn, reference til JS og CSS -->
+			<label>Pige</label>
+				<input type="radio" name="Dreng-Pige" id="pige">
+			
+			<button id="tilfaeldigtNavn">Få det her!</button>
+	</div>
+
+	<!--ens javascript skal loades efter ens egentlige html kode -->
+	<script type="text/javascript" src="Js/navne.js"></script>
+</body>
+</html>
